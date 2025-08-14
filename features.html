@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta name="robots" content="noindex, nofollow" />
     <meta
@@ -51,7 +52,7 @@
       sizes="16x16"
       href="https://gcdn.pledgestar.com/images/favicon-16x16.png"
     />
-    <link rel="manifest" href="https://gcdn.pledgestar.com/site.webmanifest" />
+
     <link
       rel="mask-icon"
       href="https://gcdn.pledgestar.com/images/safari-pinned-tab.svg"
@@ -146,20 +147,6 @@
     <!-- / The SEO Framework by Sybre Waaijer | 2.83ms meta | 228.43ms boot -->
 
     <link rel="dns-prefetch" href="https://fonts.googleapis.com/" />
-    <link
-      rel="stylesheet"
-      id="css_google-css"
-      href="https://gcdn.pledgestar.com/css_002.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="css_main-css"
-      href="https://gcdn.pledgestar.com/main.css"
-      type="text/css"
-      media="all"
-    />
 
     <style>
       :root {
@@ -198,16 +185,6 @@
       }
     </style>
 
-    <link
-      rel="stylesheet"
-      id="css_custom-css"
-      href="https://gcdn.pledgestar.com/custom.css"
-      type="text/css"
-      media="all"
-    />
-
-    <!-- <link rel="stylesheet" href="./style.css" /> -->
-
     <script
       type="text/javascript"
       src="https://gcdn.pledgestar.com/jquery_003.js"
@@ -244,30 +221,12 @@
       src="https://gcdn.pledgestar.com/g2015/jquery.waypoints.min.js?ver=4.0.1"
       id="js_waypoints-js"
     ></script>
-
-    <style>
-      .radio_item {
-        display: none !important;
-      }
-
-      .radio_item:checked + label {
-        background-color: #0275d8;
-      }
-    </style>
-
-    <style>
-      .edit-options {
-        position: absolute;
-        top: 5;
-        right: 20;
-      }
-    </style>
   </head>
 
   <body>
     <style>
       body {
-        font-family: "Montserrat", monospace;
+        font-family: "Roboto", sans-serif;
       }
     </style>
     <div id="header">
@@ -443,28 +402,33 @@
             <div class="">
               <section
                 data-role="hero"
-                class="pb-6 pb-md-0 overflow-hidden bg-light text-white h-50 d-flex align-items-center"
+                class="pb-6 pb-md-0 overflow-hidden bg-light text-white d-flex align-items-center position-relative"
+                style="height: 50vh"
               >
                 <div
-                  class="position-absolute w-100 h-100 d-none d-md-block bg-cover bg-center"
+                  class="position-absolute w-100 h-100 d-none d-md-block bg-cover bg-center z-0"
                   style="
                     background-image: url(./assets/How-It-Works.jpg);
                     background-position-x: 100%;
                     background-position-y: 50%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
                   "
                 ></div>
                 <div
-                  class="position-absolute w-100 h-100 d-md-none bg-cover bg-center"
+                  class="position-absolute w-100 h-100 d-md-none bg-cover bg-center z-0"
                   style="
                     background-image: url(./assets/mobile-How-It-Works.jpg);
                     background-position-x: 50%;
                     background-position-y: 50%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
                   "
                 ></div>
 
-                <div class="position-relative w-50">
+                <div class="position-relative w-50 z-1">
                   <div
-                    class="my-2 my-md-5 ps-2 pe-3 py-1 py-md-3 rounded-end-4 bg-primary position-relative h-25 w-75 d-flex align-items-center justify-content-end"
+                    class="my-2 my-md-5 ps-2 pe-3 py-3 py-md-3 rounded-end-4 bg-primary position-relative h-25 w-75 d-flex align-items-center justify-content-end"
                   >
                     <h1 class="my-0 fs-4 fw-bold text-white me-4">Features</h1>
                   </div>
@@ -483,7 +447,7 @@
                 <!-- First Section ------------------------------------------------------------------>
                 <div
                   data-role="columnContainer"
-                  class="flex flex-column flex-wrap flex-lg-row justify-content-between px-1 px-md-2 px-lg-1 mx-auto px-3 px-xl-5"
+                  class="d-flex flex-column flex-wrap flex-lg-row justify-content-between px-1 px-md-2 px-lg-1 mx-auto px-3 px-xl-5"
                 >
                   <div data-role="column_1" class="col pb-0">
                     <h2
@@ -522,10 +486,10 @@
                 >
                   <div class="dropdowns">
                     <div
-                      class="dropdown-row d-flex flex-column flex-sm-row flex-wrap"
+                      class="dropdown-row d-flex flex-column flex-sm-row flex-wrap px-4 px-sm-0"
                     >
                       <div class="accordion-item col-sm-12 col-md-6 col-xl-3">
-                        <h2 class="accordion-header w-100 mx-0 mx-md-3 my-4">
+                        <h2 class="accordion-header w-100 px-0 px-md-3 my-4">
                           <button
                             class="accordion-button w-100 d-flex justify-content-between"
                             type="button"
@@ -539,14 +503,13 @@
                             </figure>
                             <div
                               class="col-8 text-uppercase text-dark fw-semibold"
-                              style="font-family: 'Montserrat', monospace"
                             >
                               Personalized Pledge Request Emails
                             </div>
-                            <figure class="col-2 col-sm-1 m-0 ms-0 d-flex">
+                            <figure class="col-2 col-sm-1 m-0 ms-auto d-flex">
                               <img
                                 src="./assets/green-chevron.png"
-                                class="ms-auto ms-md-3 ms-xl-1"
+                                class="ms-auto ms-md-3 ms-xl-auto"
                                 alt=""
                               />
                             </figure>
@@ -575,7 +538,7 @@
                       </div>
 
                       <div class="accordion-item col-sm-12 col-md-6 col-xl-3">
-                        <h2 class="accordion-header w-100 mx-0 mx-md-3 my-4">
+                        <h2 class="accordion-header w-100 px-0 px-md-3 my-4">
                           <button
                             class="accordion-button w-100 d-flex justify-content-between"
                             type="button"
@@ -589,14 +552,13 @@
                             </figure>
                             <div
                               class="col-8 text-uppercase text-dark fw-semibold"
-                              style="font-family: 'Montserrat', monospace"
                             >
                               Pledge Request Messages
                             </div>
-                            <figure class="col-2 col-sm-1 m-0 ms-0 d-flex">
+                            <figure class="col-2 col-sm-1 m-0 ms-auto d-flex">
                               <img
                                 src="./assets/green-chevron.png"
-                                class="ms-auto ms-md-3 ms-xl-1"
+                                class="ms-auto ms-md-3 ms-xl-auto"
                                 alt=""
                               />
                             </figure>
@@ -620,7 +582,7 @@
                       </div>
 
                       <div class="accordion-item col-sm-12 col-md-6 col-xl-3">
-                        <h2 class="accordion-header w-100 mx-0 mx-md-3 my-4">
+                        <h2 class="accordion-header w-100 px-0 px-md-3 my-4">
                           <button
                             class="accordion-button w-100 d-flex justify-content-between"
                             type="button"
@@ -634,14 +596,13 @@
                             </figure>
                             <div
                               class="col-8 text-uppercase text-dark fw-semibold"
-                              style="font-family: 'Montserrat', monospace"
                             >
                               Social Media Sharing
                             </div>
-                            <figure class="col-2 col-sm-1 m-0 ms-0 d-flex">
+                            <figure class="col-2 col-sm-1 m-0 ms-auto d-flex">
                               <img
                                 src="./assets/green-chevron.png"
-                                class="ms-auto ms-md-3 ms-xl-1"
+                                class="ms-auto ms-md-3 ms-xl-auto"
                                 alt=""
                               />
                             </figure>
@@ -663,7 +624,7 @@
                       </div>
 
                       <div class="accordion-item col-sm-12 col-md-6 col-xl-3">
-                        <h2 class="accordion-header w-100 mx-0 mx-md-3 my-4">
+                        <h2 class="accordion-header w-100 px-0 px-md-3 my-4">
                           <button
                             class="accordion-button w-100 d-flex justify-content-between"
                             type="button"
@@ -677,14 +638,13 @@
                             </figure>
                             <div
                               class="col-8 text-uppercase text-dark fw-semibold"
-                              style="font-family: 'Montserrat', monospace"
                             >
                               Online Address Book Integration
                             </div>
-                            <figure class="col-2 col-sm-1 m-0 ms-0 d-flex">
+                            <figure class="col-2 col-sm-1 m-0 ms-auto d-flex">
                               <img
                                 src="./assets/green-chevron.png"
-                                class="ms-auto ms-md-3 ms-xl-1"
+                                class="ms-auto ms-md-3 ms-xl-auto"
                                 alt=""
                               />
                             </figure>
@@ -709,7 +669,7 @@
                       </div>
 
                       <div class="accordion-item col-sm-12 col-md-6 col-xl-3">
-                        <h2 class="accordion-header w-100 mx-0 mx-md-3 my-4">
+                        <h2 class="accordion-header w-100 px-0 px-md-3 my-4">
                           <button
                             class="accordion-button w-100 d-flex justify-content-between"
                             type="button"
@@ -723,14 +683,13 @@
                             </figure>
                             <div
                               class="col-8 text-uppercase text-dark fw-semibold"
-                              style="font-family: 'Montserrat', monospace"
                             >
                               Per Repetition Donations
                             </div>
-                            <figure class="col-2 col-sm-1 m-0 ms-0 d-flex">
+                            <figure class="col-2 col-sm-1 m-0 ms-auto d-flex">
                               <img
                                 src="./assets/green-chevron.png"
-                                class="ms-auto ms-md-3 ms-xl-1"
+                                class="ms-auto ms-md-3 ms-xl-auto"
                                 alt=""
                               />
                             </figure>
@@ -752,7 +711,7 @@
                       </div>
 
                       <div class="accordion-item col-sm-12 col-md-6 col-xl-3">
-                        <h2 class="accordion-header w-100 mx-0 mx-md-3 my-4">
+                        <h2 class="accordion-header w-100 px-0 px-md-3 my-4">
                           <button
                             class="accordion-button w-100 d-flex justify-content-between"
                             type="button"
@@ -766,14 +725,13 @@
                             </figure>
                             <div
                               class="col-8 text-uppercase text-dark fw-semibold"
-                              style="font-family: 'Montserrat', monospace"
                             >
                               Optional Auto-Increasing Goal Meter
                             </div>
-                            <figure class="col-2 col-sm-1 m-0 ms-0 d-flex">
+                            <figure class="col-2 col-sm-1 m-0 ms-auto d-flex">
                               <img
                                 src="./assets/green-chevron.png"
-                                class="ms-auto ms-md-3 ms-xl-1"
+                                class="ms-auto ms-md-3 ms-xl-auto"
                                 alt=""
                               />
                             </figure>
@@ -798,7 +756,7 @@
                       </div>
 
                       <div class="accordion-item col-sm-12 col-md-6 col-xl-3">
-                        <h2 class="accordion-header w-100 mx-0 mx-md-3 my-4">
+                        <h2 class="accordion-header w-100 px-0 px-md-3 my-4">
                           <button
                             class="accordion-button w-100 d-flex justify-content-between"
                             type="button"
@@ -812,14 +770,13 @@
                             </figure>
                             <div
                               class="col-8 text-uppercase text-dark fw-semibold"
-                              style="font-family: 'Montserrat', monospace"
                             >
                               Sign-Up Reminders
                             </div>
-                            <figure class="col-2 col-sm-1 m-0 ms-0 d-flex">
+                            <figure class="col-2 col-sm-1 m-0 ms-auto d-flex">
                               <img
                                 src="./assets/green-chevron.png"
-                                class="ms-auto ms-md-3 ms-xl-1"
+                                class="ms-auto ms-md-3 ms-xl-auto"
                                 alt=""
                               />
                             </figure>
@@ -844,7 +801,7 @@
                       </div>
 
                       <div class="accordion-item col-sm-12 col-md-6 col-xl-3">
-                        <h2 class="accordion-header w-100 mx-0 mx-md-3 my-4">
+                        <h2 class="accordion-header w-100 px-0 px-md-3 my-4">
                           <button
                             class="accordion-button w-100 d-flex justify-content-between"
                             type="button"
@@ -858,14 +815,13 @@
                             </figure>
                             <div
                               class="col-8 text-uppercase text-dark fw-semibold"
-                              style="font-family: 'Montserrat', monospace"
                             >
                               Donation Reminder
                             </div>
-                            <figure class="col-2 col-sm-1 m-0 ms-0 d-flex">
+                            <figure class="col-2 col-sm-1 m-0 ms-auto d-flex">
                               <img
                                 src="./assets/green-chevron.png"
-                                class="ms-auto ms-md-3 ms-xl-1"
+                                class="ms-auto ms-md-3 ms-xl-auto"
                                 alt=""
                               />
                             </figure>
@@ -888,7 +844,7 @@
                       </div>
 
                       <div class="accordion-item col-sm-12 col-md-6 col-xl-3">
-                        <h2 class="accordion-header w-100 mx-0 mx-md-3 my-4">
+                        <h2 class="accordion-header w-100 px-0 px-md-3 my-4">
                           <button
                             class="accordion-button w-100 d-flex justify-content-between"
                             type="button"
@@ -902,14 +858,13 @@
                             </figure>
                             <div
                               class="col-8 text-uppercase text-dark fw-semibold"
-                              style="font-family: 'Montserrat', monospace"
                             >
                               Fee Coverage
                             </div>
-                            <figure class="col-2 col-sm-1 m-0 ms-0 d-flex">
+                            <figure class="col-2 col-sm-1 m-0 ms-auto d-flex">
                               <img
                                 src="./assets/green-chevron.png"
-                                class="ms-auto ms-md-3 ms-xl-1"
+                                class="ms-auto ms-md-3 ms-xl-auto"
                                 alt=""
                               />
                             </figure>
@@ -931,7 +886,7 @@
                       </div>
 
                       <div class="accordion-item col-sm-12 col-md-6 col-xl-3">
-                        <h2 class="accordion-header w-100 mx-0 mx-md-3 my-4">
+                        <h2 class="accordion-header w-100 px-0 px-md-3 my-4">
                           <button
                             class="accordion-button w-100 d-flex justify-content-between"
                             type="button"
@@ -945,14 +900,13 @@
                             </figure>
                             <div
                               class="col-8 text-uppercase text-dark fw-semibold"
-                              style="font-family: 'Montserrat', monospace"
                             >
                               Translations
                             </div>
-                            <figure class="col-2 col-sm-1 m-0 ms-0 d-flex">
+                            <figure class="col-2 col-sm-1 m-0 ms-auto d-flex">
                               <img
                                 src="./assets/green-chevron.png"
-                                class="ms-auto ms-md-3 ms-xl-1"
+                                class="ms-auto ms-md-3 ms-xl-auto"
                                 alt=""
                               />
                             </figure>
@@ -976,7 +930,7 @@
                       </div>
 
                       <div class="accordion-item col-sm-12 col-md-6 col-xl-3">
-                        <h2 class="accordion-header w-100 mx-0 mx-md-3 my-4">
+                        <h2 class="accordion-header w-100 px-0 px-md-3 my-4">
                           <button
                             class="accordion-button w-100 d-flex justify-content-between"
                             type="button"
@@ -990,14 +944,13 @@
                             </figure>
                             <div
                               class="col-8 text-uppercase text-dark fw-semibold"
-                              style="font-family: 'Montserrat', monospace"
                             >
                               Sponsors
                             </div>
-                            <figure class="col-2 col-sm-1 m-0 ms-0 d-flex">
+                            <figure class="col-2 col-sm-1 m-0 ms-auto d-flex">
                               <img
                                 src="./assets/green-chevron.png"
-                                class="ms-auto ms-md-3 ms-xl-1"
+                                class="ms-auto ms-md-3 ms-xl-auto"
                                 alt=""
                               />
                             </figure>
@@ -1018,7 +971,7 @@
                       </div>
 
                       <div class="accordion-item col-sm-12 col-md-6 col-xl-3">
-                        <h2 class="accordion-header w-100 mx-0 mx-md-3 my-4">
+                        <h2 class="accordion-header w-100 px-0 px-md-3 my-4">
                           <button
                             class="accordion-button w-100 d-flex justify-content-between"
                             type="button"
@@ -1032,14 +985,13 @@
                             </figure>
                             <div
                               class="col-8 text-uppercase text-dark fw-semibold"
-                              style="font-family: 'Montserrat', monospace"
                             >
                               School Goal Meter
                             </div>
-                            <figure class="col-2 col-sm-1 m-0 ms-0 d-flex">
+                            <figure class="col-2 col-sm-1 m-0 ms-auto d-flex">
                               <img
                                 src="./assets/green-chevron.png"
-                                class="ms-auto ms-md-3 ms-xl-1"
+                                class="ms-auto ms-md-3 ms-xl-auto"
                                 alt=""
                               />
                             </figure>
@@ -1061,7 +1013,7 @@
                       </div>
 
                       <div class="accordion-item col-sm-12 col-md-6 col-xl-3">
-                        <h2 class="accordion-header w-100 mx-0 mx-md-3 my-4">
+                        <h2 class="accordion-header w-100 px-0 px-md-3 my-4">
                           <button
                             class="accordion-button w-100 d-flex justify-content-between"
                             type="button"
@@ -1075,14 +1027,13 @@
                             </figure>
                             <div
                               class="col-8 text-uppercase text-dark fw-semibold"
-                              style="font-family: 'Montserrat', monospace"
                             >
                               Classroom Leaderboard
                             </div>
-                            <figure class="col-2 col-sm-1 m-0 ms-0 d-flex">
+                            <figure class="col-2 col-sm-1 m-0 ms-auto d-flex">
                               <img
                                 src="./assets/green-chevron.png"
-                                class="ms-auto ms-md-3 ms-xl-1"
+                                class="ms-auto ms-md-3 ms-xl-auto"
                                 alt=""
                               />
                             </figure>
@@ -1106,7 +1057,7 @@
                       </div>
 
                       <div class="accordion-item col-sm-12 col-md-6 col-xl-3">
-                        <h2 class="accordion-header w-100 mx-0 mx-md-3 my-4">
+                        <h2 class="accordion-header w-100 px-0 px-md-3 my-4">
                           <button
                             class="accordion-button w-100 d-flex justify-content-between"
                             type="button"
@@ -1120,14 +1071,13 @@
                             </figure>
                             <div
                               class="col-8 text-uppercase text-dark fw-semibold"
-                              style="font-family: 'Montserrat', monospace"
                             >
                               Online Checks Option
                             </div>
-                            <figure class="col-2 col-sm-1 m-0 ms-0 d-flex">
+                            <figure class="col-2 col-sm-1 m-0 ms-auto d-flex">
                               <img
                                 src="./assets/green-chevron.png"
-                                class="ms-auto ms-md-3 ms-xl-1"
+                                class="ms-auto ms-md-3 ms-xl-auto"
                                 alt=""
                               />
                             </figure>
@@ -1153,7 +1103,7 @@
                       </div>
 
                       <div class="accordion-item col-sm-12 col-md-6 col-xl-3">
-                        <h2 class="accordion-header w-100 mx-0 mx-md-3 my-4">
+                        <h2 class="accordion-header w-100 px-0 px-md-3 my-4">
                           <button
                             class="accordion-button w-100 d-flex justify-content-between"
                             type="button"
@@ -1167,14 +1117,13 @@
                             </figure>
                             <div
                               class="col-8 text-uppercase text-dark fw-semibold"
-                              style="font-family: 'Montserrat', monospace"
                             >
                               Accept PayPal Payments
                             </div>
-                            <figure class="col-2 col-sm-1 m-0 ms-0 d-flex">
+                            <figure class="col-2 col-sm-1 m-0 ms-auto d-flex">
                               <img
                                 src="./assets/green-chevron.png"
-                                class="ms-auto ms-md-3 ms-xl-1"
+                                class="ms-auto ms-md-3 ms-xl-auto"
                                 alt=""
                               />
                             </figure>
@@ -1194,7 +1143,7 @@
                       </div>
 
                       <div class="accordion-item col-sm-12 col-md-6 col-xl-3">
-                        <h2 class="accordion-header w-100 mx-0 mx-md-3 my-4">
+                        <h2 class="accordion-header w-100 px-0 px-md-3 my-4">
                           <button
                             class="accordion-button w-100 d-flex justify-content-between"
                             type="button"
@@ -1208,14 +1157,13 @@
                             </figure>
                             <div
                               class="col-8 text-uppercase text-dark fw-semibold"
-                              style="font-family: 'Montserrat', monospace"
                             >
                               Pledge Request Video
                             </div>
-                            <figure class="col-2 col-sm-1 m-0 ms-0 d-flex">
+                            <figure class="col-2 col-sm-1 m-0 ms-auto d-flex">
                               <img
                                 src="./assets/green-chevron.png"
-                                class="ms-auto ms-md-3 ms-xl-1"
+                                class="ms-auto ms-md-3 ms-xl-auto"
                                 alt=""
                               />
                             </figure>
@@ -1238,7 +1186,7 @@
                       </div>
 
                       <div class="accordion-item col-sm-12 col-md-6 col-xl-3">
-                        <h2 class="accordion-header w-100 mx-0 mx-md-3 my-4">
+                        <h2 class="accordion-header w-100 px-0 px-md-3 my-4">
                           <button
                             class="accordion-button w-100 d-flex justify-content-between"
                             type="button"
@@ -1252,14 +1200,13 @@
                             </figure>
                             <div
                               class="col-8 text-uppercase text-dark fw-semibold"
-                              style="font-family: 'Montserrat', monospace"
                             >
                               Corporate Donation Matching
                             </div>
-                            <figure class="col-2 col-sm-1 m-0 ms-0 d-flex">
+                            <figure class="col-2 col-sm-1 m-0 ms-auto d-flex">
                               <img
                                 src="./assets/green-chevron.png"
-                                class="ms-auto ms-md-3 ms-xl-1"
+                                class="ms-auto ms-md-3 ms-xl-auto"
                                 alt=""
                               />
                             </figure>
@@ -1303,7 +1250,7 @@
                   </h2>
 
                   <div
-                    class="p-5 px-sm-0 px-lg-5 d-flex align-items-start justify-content-between flex-column flex-lg-row"
+                    class="p-5 px-4 px-sm-0 px-lg-5 d-flex align-items-start justify-content-between flex-column flex-lg-row"
                   >
                     <ul
                       class="nav nav-pills flex-column nav-pills border-3 me-3 mt-0 mb-4 mb-lg-0 col col-sm-12 col-lg-3 bg-primary p-4 rounded-4"
@@ -1320,7 +1267,6 @@
                           role="tab"
                           aria-controls="pills-home"
                           aria-selected="true"
-                          style="font-family: 'Montserrat', sans-serif"
                         >
                           For Administrators
                         </button>
@@ -1335,7 +1281,6 @@
                           role="tab"
                           aria-controls="pills-profile"
                           aria-selected="false"
-                          style="font-family: 'Montserrat', sans-serif"
                         >
                           For Families
                         </button>
@@ -1350,7 +1295,6 @@
                           role="tab"
                           aria-controls="pills-contact"
                           aria-selected="false"
-                          style="font-family: 'Montserrat', sans-serif"
                         >
                           For Donors
                         </button>
@@ -1383,11 +1327,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Quick View Dashboard
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -1428,11 +1371,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Reports
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -1495,11 +1437,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Offline "Pledge Packet" Donation Entry
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -1543,11 +1484,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Ready-Made or Custom Pledge Request Message
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -1588,11 +1528,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Starter Flyer
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -1634,11 +1573,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Automated T-Shirt Size Collection Options
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -1677,11 +1615,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Tutorial Videos
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -1722,11 +1659,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Online Check Entry Option
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -1766,11 +1702,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Per Repetition Entry Option
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -1815,11 +1750,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Optional Classroom Leaderboard
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -1860,11 +1794,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Mobile Friendly
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -1905,11 +1838,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Pledge Drive Specialist
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -1961,11 +1893,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Easy Setup
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -2007,11 +1938,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Auto-Fill Prior Year Donors
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -2050,11 +1980,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Online Address Book Integration
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -2097,11 +2026,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     One-Click Social Media
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -2141,11 +2069,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Pledge Request Tracking
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -2190,11 +2117,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Combined Family Page
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -2239,11 +2165,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Reading Log
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -2284,11 +2209,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Classroom Leaderboard
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -2329,11 +2253,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Automated Thank You Notes
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -2374,11 +2297,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Translations
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -2421,11 +2343,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Mobile Friendly
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -2467,11 +2388,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Family Support
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -2525,11 +2445,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Easy One-Step Donation
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -2574,11 +2493,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Donation Payment Options
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -2617,11 +2535,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     One Pledge Request Per Family
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -2665,11 +2582,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Automated Receipts
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -2709,11 +2625,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Encouraging Messages
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -2752,11 +2667,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Translations
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -2799,11 +2713,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Mobile Friendly
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -2843,11 +2756,10 @@
                                 >
                                   <div
                                     class="col-11 text-uppercase text-dark fw-semibold"
-                                    style="font-family: 'Montserrat', monospace"
                                   >
                                     Donor Support
                                   </div>
-                                  <figure class="col-1 m-0 flex">
+                                  <figure class="col-1 m-0 d-flex">
                                     <img
                                       src="./assets/green-chevron.png"
                                       class="ms-auto"
@@ -3003,7 +2915,7 @@
                       Get Your Free Copy
                     </a>
 
-                    <p class="text-dark p-0 fw-normal lh-4 small">
+                    <p class="text-dark p-0 fw-normal lh-4 small mt-4">
                       It’s absolutely free—no email required!
                     </p>
                   </div>

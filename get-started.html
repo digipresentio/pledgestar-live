@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta
       name="viewport"
@@ -50,7 +51,7 @@
       sizes="16x16"
       href="https://gcdn.pledgestar.com/images/favicon-16x16.png"
     />
-    <link rel="manifest" href="https://gcdn.pledgestar.com/site.webmanifest" />
+
     <link
       rel="mask-icon"
       href="https://gcdn.pledgestar.com/images/safari-pinned-tab.svg"
@@ -146,20 +147,6 @@
     <!-- / The SEO Framework by Sybre Waaijer | 2.83ms meta | 228.43ms boot -->
 
     <link rel="dns-prefetch" href="https://fonts.googleapis.com/" />
-    <link
-      rel="stylesheet"
-      id="css_google-css"
-      href="https://gcdn.pledgestar.com/css_002.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="css_main-css"
-      href="https://gcdn.pledgestar.com/main.css"
-      type="text/css"
-      media="all"
-    />
 
     <style>
       :root {
@@ -197,16 +184,6 @@
         --bs-nav-pills-link-active-bg: #6ee3d6 !important;
       }
     </style>
-
-    <link
-      rel="stylesheet"
-      id="css_custom-css"
-      href="https://gcdn.pledgestar.com/custom.css"
-      type="text/css"
-      media="all"
-    />
-
-    <!-- <link rel="stylesheet" href="./style.css" /> -->
 
     <script
       type="text/javascript"
@@ -246,20 +223,185 @@
     ></script>
 
     <style>
-      .radio_item {
-        display: none !important;
+      .selectric-wrapper {
+        position: relative;
+        cursor: pointer;
       }
-
-      .radio_item:checked + label {
-        background-color: #0275d8;
+      .selectric-responsive {
+        width: 100%;
       }
-    </style>
-
-    <style>
-      .edit-options {
+      .selectric {
+        background: #f3f4f8;
+        border: 1px solid #e3e5ef;
+        border-radius: 0.5rem;
+        position: relative;
+        overflow: hidden;
+        font-size: 0.875rem;
+        font-family: Montserrat, sans-serif;
+        font-weight: 600;
+      }
+      .formOnDarkBg .selectric {
+        background: var(--lightergray);
+        border: 1px solid hsla(0, 0%, 100%, 0.5);
+        color: var(--darkgray);
+      }
+      .selectric .label {
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        height: 38px;
+        overflow: hidden;
+        padding: 5px 20px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: #616161;
+        font-weight: 300;
+      }
+      .selectric .button {
+        display: block;
         position: absolute;
-        top: 5;
-        right: 20;
+        right: 0;
+        top: 0;
+        width: 37px;
+        height: 37px;
+        line-height: 50px;
+        color: #bbb;
+        text-align: center;
+        font: 0/0 a;
+      }
+      .selectric .button:after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 0;
+        height: 0;
+        border: 6px solid transparent;
+        border-top-color: #525252;
+        border-bottom: none;
+      }
+      .formOnDarkBg .selectric .button:after {
+        border-top-color: var(--darkgray);
+      }
+      .selectric-hover .selectric .button {
+        color: #a2a2a2;
+      }
+      .selectric-hover .selectric .button:after {
+        border-top-color: #a2a2a2;
+      }
+      .selectric-open {
+        z-index: 9999;
+      }
+      .selectric-open .selectric-items {
+        display: block;
+      }
+      .selectric-disabled {
+        filter: alpha(opacity=50);
+        opacity: 0.5;
+        cursor: default;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .selectric-hide-select {
+        position: relative;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+      }
+      .selectric-hide-select select {
+        position: absolute;
+        left: -100%;
+      }
+      .selectric-hide-select.selectric-is-native {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+      }
+      .selectric-hide-select.selectric-is-native select {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        border: none;
+        z-index: 1;
+        box-sizing: border-box;
+        opacity: 0;
+      }
+      .selectric-input {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        overflow: hidden !important;
+        clip: rect(0, 0, 0, 0) !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 1px !important;
+        height: 1px !important;
+        outline: none !important;
+        border: none !important;
+        font: 0/0 a !important;
+        background: none !important;
+      }
+      .selectric-temp-show {
+        position: absolute !important;
+        visibility: hidden !important;
+        display: block !important;
+      }
+      .selectric-items {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #f0f0f0;
+        border: 1px solid #737373;
+        z-index: -1;
+        font-size: 0.875rem;
+        font-family: Roboto, sans-serif;
+        font-weight: 600;
+      }
+      .selectric-items .selectric-scroll {
+        height: 100%;
+        overflow: auto;
+      }
+      .selectric-above .selectric-items {
+        top: auto;
+        bottom: 100%;
+      }
+      .selectric-items li,
+      .selectric-items ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        min-height: 20px;
+      }
+      .selectric-items li {
+        display: block;
+        /* padding: 10px 15px; */
+        cursor: pointer;
+        font-size: 0.9em;
+        color: #231f20 !important;
+      }
+      .selectric-items li.selected:empty {
+        background: none;
+        padding: 0 !important;
+        min-height: 0 !important;
+      }
+      .selectric-items li.highlighted,
+      .selectric-items li:hover {
+        background: #6ee3d6;
+        color: #231f20 !important;
       }
     </style>
   </head>
@@ -267,7 +409,7 @@
   <body>
     <style>
       body {
-        font-family: "Montserrat", monospace;
+        font-family: "Roboto", sans-serif;
       }
     </style>
     <div id="header">
@@ -443,28 +585,33 @@
             <div class="">
               <section
                 data-role="hero"
-                class="pb-6 pb-md-0 overflow-hidden bg-light text-white h-50 d-flex align-items-center"
+                class="pb-6 pb-md-0 overflow-hidden bg-light text-white d-flex align-items-center position-relative"
+                style="height: 50vh"
               >
                 <div
-                  class="position-absolute w-100 h-100 d-none d-md-block bg-cover bg-center"
+                  class="position-absolute w-100 h-100 d-none d-md-block bg-cover bg-center z-0"
                   style="
                     background-image: url(./assets/Getting-Started.jpg);
                     background-position-x: 100%;
                     background-position-y: 50%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
                   "
                 ></div>
                 <div
-                  class="position-absolute w-100 h-100 d-md-none bg-cover bg-center"
+                  class="position-absolute w-100 h-100 d-md-none bg-cover bg-center z-0"
                   style="
                     background-image: url(./assets/mobile-Getting-Started.jpg);
                     background-position-x: 50%;
                     background-position-y: 50%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
                   "
                 ></div>
 
-                <div class="position-relative w-50">
+                <div class="position-relative w-50 z-1">
                   <div
-                    class="my-2 my-md-5 ps-2 pe-3 py-1 py-md-3 rounded-end-4 bg-primary position-relative h-25 w-75 d-flex align-items-center justify-content-end"
+                    class="my-2 my-md-5 ps-2 pe-3 py-3 py-md-3 rounded-end-4 bg-primary position-relative h-25 w-75 d-flex align-items-center justify-content-end"
                   >
                     <h1 class="my-0 fs-4 fw-bold text-white me-4">
                       Get Started
@@ -545,7 +692,7 @@
               >
                 <div class="px-1 px-md-2 px-lg-1 mx-auto py-5">
                   <div class="w-100">
-                    <div class="flex justify-content-center px-5">
+                    <div class="d-flex justify-content-center px-5">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"

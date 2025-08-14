@@ -1,6 +1,7 @@
 <!-- <assign condition="not IsEmpty(PathAliasRedirect)" name="Controller.Redirect" value="^[PathAliasRedirect]" /> -->
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta
       name="viewport"
@@ -58,7 +59,7 @@
       sizes="16x16"
       href="https://gcdn.pledgestar.com/images/favicon-16x16.png"
     />
-    <link rel="manifest" href="https://gcdn.pledgestar.com/site.webmanifest" />
+
     <link
       rel="mask-icon"
       href="https://gcdn.pledgestar.com/images/safari-pinned-tab.svg"
@@ -154,20 +155,6 @@
     <!-- / The SEO Framework by Sybre Waaijer | 2.83ms meta | 228.43ms boot -->
 
     <link rel="dns-prefetch" href="https://fonts.googleapis.com/" />
-    <link
-      rel="stylesheet"
-      id="css_google-css"
-      href="https://gcdn.pledgestar.com/css_002.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="css_main-css"
-      href="https://gcdn.pledgestar.com/main.css"
-      type="text/css"
-      media="all"
-    />
 
     <style>
       :root {
@@ -201,16 +188,6 @@
         --bs-btn-disabled-border-color: #4840bb !important;
       }
     </style>
-
-    <link
-      rel="stylesheet"
-      id="css_custom-css"
-      href="https://gcdn.pledgestar.com/custom.css"
-      type="text/css"
-      media="all"
-    />
-
-    <!-- <link rel="stylesheet" href="./style.css" /> -->
 
     <script
       type="text/javascript"
@@ -248,30 +225,12 @@
       src="https://gcdn.pledgestar.com/g2015/jquery.waypoints.min.js?ver=4.0.1"
       id="js_waypoints-js"
     ></script>
-
-    <style>
-      .radio_item {
-        display: none !important;
-      }
-
-      .radio_item:checked + label {
-        background-color: #0275d8;
-      }
-    </style>
-
-    <style>
-      .edit-options {
-        position: absolute;
-        top: 5;
-        right: 20;
-      }
-    </style>
   </head>
 
   <body>
     <style>
       body {
-        font-family: "Montserrat", monospace;
+        font-family: "Roboto", sans-serif;
       }
     </style>
     <div id="header">
@@ -446,10 +405,11 @@
           <div class="">
             <section
               data-role="hero"
-              class="overflow-hidden bg-light text-white h-50 d-none d-md-block"
+              class="overflow-hidden bg-light text-white d-none d-md-block position-relative"
+              style="height: 50vh"
             >
               <div
-                class="position-absolute d-none d-md-block w-100 h-100"
+                class="position-absolute d-none d-md-block w-100 h-100 z-0"
                 style="
                   background-image: url(./assets/booster\ clubs\ hero\ image.png);
                   background-position-x: 60%;
@@ -459,7 +419,7 @@
               ></div>
 
               <div
-                class="mx-auto d-none d-md-flex justify-content-between align-items-start align-items-sm-center h-100"
+                class="mx-auto d-none d-md-flex justify-content-between align-items-start align-items-sm-center h-100 z-1 position-relative"
               >
                 <div
                   class="px-3 px-xl-4 py-3 py-md-4 py-lg-5 bg-primary h-100 col-md-5 col-lg-4 col-xxl-3 d-flex flex-column justify-content-center"
@@ -485,10 +445,11 @@
 
             <section
               data-role="hero"
-              class="overflow-hidden bg-light text-white h-75 d-block d-md-none"
+              class="overflow-hidden bg-light text-white d-block d-md-none position-relative"
+              style="height: 75vh"
             >
               <div
-                class="position-absolute d-block d-md-none w-100 h-100"
+                class="position-absolute d-block d-md-none w-100 h-100 z-0"
                 style="
                   background-image: url(./assets/booster\ clubs\ hero\ image\ mobile.png);
                   background-position-x: 50%;
@@ -500,10 +461,10 @@
 
               <!-- Mobile Content -->
               <div
-                class="mx-auto d-flex d-md-none align-items-start align-items-sm-center"
+                class="mx-auto d-flex d-md-none align-items-start align-items-sm-center z-1 position-relative"
               >
                 <div
-                  class="py-3 px-4 bg-primary col-12 d-flex flex-column justify-content-center"
+                  class="py-5 px-4 bg-primary col-12 d-flex flex-column justify-content-center"
                 >
                   <h1 class="mb-0 fs-4 lh-2 mb-lg-3">
                     Transform Your Booster Club Fundraising in Minutes
@@ -1391,10 +1352,11 @@
           <div class="">
             <section
               data-role="hero"
-              class="overflow-hidden bg-light text-white h-50 d-none d-md-block"
+              class="overflow-hidden bg-light text-white d-none d-md-block position-relative"
+              style="height: 50vh"
             >
               <div
-                class="position-absolute d-none d-md-block w-100 h-100"
+                class="position-absolute d-none d-md-block w-100 h-100 z-0"
                 style="
                   background-image: url(./assets/5.png);
                   background-position-x: 60%;
@@ -1404,7 +1366,7 @@
               ></div>
 
               <div
-                class="mx-auto d-none d-md-flex justify-content-between align-items-start align-items-sm-center h-100"
+                class="mx-auto d-none d-md-flex justify-content-between align-items-start align-items-sm-center h-100 z-1 position-relative"
               >
                 <div
                   class="px-3 px-xl-4 py-3 py-md-4 py-lg-5 bg-primary h-100 col-md-5 col-lg-4 col-xxl-3 d-flex flex-column justify-content-center"
@@ -1430,10 +1392,11 @@
 
             <section
               data-role="hero"
-              class="overflow-hidden bg-light text-white h-75 d-block d-md-none"
+              class="overflow-hidden bg-light text-white d-block d-md-none position-relative"
+              style="height: 75vh"
             >
               <div
-                class="position-absolute d-block d-md-none w-100 h-100"
+                class="position-absolute d-block d-md-none w-100 h-100 z-0"
                 style="
                   background-image: url(./assets/5\ mob.png);
                   background-position-x: 90%;
@@ -1445,10 +1408,10 @@
 
               <!-- Mobile Content -->
               <div
-                class="mx-auto d-flex d-md-none align-items-start align-items-sm-center"
+                class="mx-auto d-flex d-md-none align-items-start align-items-sm-center z-1 position-relative"
               >
                 <div
-                  class="py-3 px-4 bg-primary col-12 d-flex flex-column justify-content-center"
+                  class="py-5 px-4 bg-primary col-12 d-flex flex-column justify-content-center"
                 >
                   <h2 class="mb-0 fs-4 lh-2 mb-lg-3">
                     Ready to Raise More for Your Team?
@@ -1530,7 +1493,7 @@
                     Get Your Free Copy
                   </a>
 
-                  <p class="text-dark p-0 lh-4 small">
+                  <p class="text-dark p-0 lh-4 small mt-4">
                     It’s absolutely free—no email required!
                   </p>
                 </div>

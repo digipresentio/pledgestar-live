@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta
       name="viewport"
@@ -50,7 +51,7 @@
       sizes="16x16"
       href="https://gcdn.pledgestar.com/images/favicon-16x16.png"
     />
-    <link rel="manifest" href="https://gcdn.pledgestar.com/site.webmanifest" />
+
     <link
       rel="mask-icon"
       href="https://gcdn.pledgestar.com/images/safari-pinned-tab.svg"
@@ -146,20 +147,6 @@
     <!-- / The SEO Framework by Sybre Waaijer | 2.83ms meta | 228.43ms boot -->
 
     <link rel="dns-prefetch" href="https://fonts.googleapis.com/" />
-    <link
-      rel="stylesheet"
-      id="css_google-css"
-      href="https://gcdn.pledgestar.com/css_002.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="css_main-css"
-      href="https://gcdn.pledgestar.com/main.css"
-      type="text/css"
-      media="all"
-    />
 
     <style>
       :root {
@@ -198,16 +185,6 @@
       }
     </style>
 
-    <link
-      rel="stylesheet"
-      id="css_custom-css"
-      href="https://gcdn.pledgestar.com/custom.css"
-      type="text/css"
-      media="all"
-    />
-
-    <!-- <link rel="stylesheet" href="./style.css" /> -->
-
     <script
       type="text/javascript"
       src="https://gcdn.pledgestar.com/jquery_003.js"
@@ -244,30 +221,12 @@
       src="https://gcdn.pledgestar.com/g2015/jquery.waypoints.min.js?ver=4.0.1"
       id="js_waypoints-js"
     ></script>
-
-    <style>
-      .radio_item {
-        display: none !important;
-      }
-
-      .radio_item:checked + label {
-        background-color: #0275d8;
-      }
-    </style>
-
-    <style>
-      .edit-options {
-        position: absolute;
-        top: 5;
-        right: 20;
-      }
-    </style>
   </head>
 
   <body>
     <style>
       body {
-        font-family: "Montserrat", monospace;
+        font-family: "Roboto", sans-serif;
       }
     </style>
     <div id="header">
@@ -443,28 +402,33 @@
             <div class="">
               <section
                 data-role="hero"
-                class="pb-6 pb-md-0 overflow-hidden bg-light text-white h-50 d-flex align-items-center"
+                class="pb-6 pb-md-0 overflow-hidden bg-light text-white d-flex align-items-center position-relative"
+                style="height: 50vh"
               >
                 <div
-                  class="position-absolute w-100 h-100 d-none d-md-block bg-cover bg-center"
+                  class="position-absolute w-100 h-100 d-none d-md-block bg-cover bg-center z-0"
                   style="
                     background-image: url(./assets/Pricing.jpg);
                     background-position-x: 100%;
                     background-position-y: 50%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
                   "
                 ></div>
                 <div
-                  class="position-absolute w-100 h-100 d-md-none bg-cover bg-center"
+                  class="position-absolute w-100 h-100 d-md-none bg-cover bg-center z-0"
                   style="
                     background-image: url(./assets/mobile-Pricing.jpg);
                     background-position-x: 50%;
                     background-position-y: 50%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
                   "
                 ></div>
 
-                <div class="position-relative w-50">
+                <div class="position-relative w-50 z-1">
                   <div
-                    class="my-2 my-md-5 ps-2 pe-3 py-1 py-md-3 rounded-end-4 bg-primary position-relative h-25 w-75 d-flex align-items-center justify-content-end"
+                    class="my-2 my-md-5 ps-2 pe-3 py-3 py-md-3 rounded-end-4 bg-primary position-relative h-25 w-75 d-flex align-items-center justify-content-end"
                   >
                     <h1 class="my-0 fs-4 fw-bold text-white me-4">Pricing</h1>
                   </div>
@@ -666,7 +630,7 @@
               >
                 <div class="px-1 px-md-2 px-lg-1 mx-auto py-5">
                   <div class="w-100">
-                    <div class="flex justify-content-center px-5">
+                    <div class="d-flex justify-content-center px-5">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"

@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta
       name="viewport"
@@ -56,7 +57,7 @@
       sizes="16x16"
       href="https://gcdn.pledgestar.com/images/favicon-16x16.png"
     />
-    <link rel="manifest" href="https://gcdn.pledgestar.com/site.webmanifest" />
+
     <link
       rel="mask-icon"
       href="https://gcdn.pledgestar.com/images/safari-pinned-tab.svg"
@@ -152,20 +153,6 @@
     <!-- / The SEO Framework by Sybre Waaijer | 2.83ms meta | 228.43ms boot -->
 
     <link rel="dns-prefetch" href="https://fonts.googleapis.com/" />
-    <link
-      rel="stylesheet"
-      id="css_google-css"
-      href="https://gcdn.pledgestar.com/css_002.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="css_main-css"
-      href="https://gcdn.pledgestar.com/main.css"
-      type="text/css"
-      media="all"
-    />
 
     <style>
       :root {
@@ -202,16 +189,6 @@
         --bs-nav-pills-link-active-bg: #4840bb !important;
       }
     </style>
-
-    <link
-      rel="stylesheet"
-      id="css_custom-css"
-      href="https://gcdn.pledgestar.com/custom.css"
-      type="text/css"
-      media="all"
-    />
-
-    <!-- <link rel="stylesheet" href="./style.css" /> -->
 
     <script
       type="text/javascript"
@@ -276,7 +253,7 @@
   <body>
     <style>
       body {
-        font-family: "Montserrat", monospace;
+        font-family: "Roboto", sans-serif;
       }
     </style>
     <div id="header">
@@ -452,10 +429,11 @@
             <div class="">
               <section
                 data-role="hero"
-                class="overflow-hidden bg-light text-white h-50 d-none d-md-block"
+                class="overflow-hidden bg-light text-white d-none d-md-block position-relative"
+                style="height: 50vh"
               >
                 <div
-                  class="position-absolute top-0 start-0 w-100 h-100 d-none d-md-block"
+                  class="position-absolute top-0 start-0 w-100 h-100 d-none d-md-block z-0"
                   style="
                     background-image: url(./assets/readathon\ hero\ image.png);
                     background-position-x: 60%;
@@ -465,7 +443,7 @@
                 ></div>
 
                 <div
-                  class="mx-auto d-none d-md-flex justify-content-between align-items-start align-items-sm-center h-100"
+                  class="mx-auto d-none d-md-flex justify-content-between align-items-start align-items-sm-center h-100 z-1 position-relative"
                 >
                   <div
                     class="px-3 px-xl-4 py-3 py-md-4 py-lg-5 bg-primary h-100 col-md-5 col-lg-4 col-xxl-3 d-flex flex-column justify-content-center"
@@ -491,10 +469,11 @@
 
               <section
                 data-role="hero"
-                class="overflow-hidden bg-light text-white h-75 d-block d-md-none"
+                class="overflow-hidden bg-light text-white d-block d-md-none position-relative"
+                style="height: 75vh"
               >
                 <div
-                  class="position-absolute d-block d-md-none w-100 h-100"
+                  class="position-absolute d-block d-md-none w-100 h-100 z-0"
                   style="
                     background-image: url(./assets/readathon\ hero\ image\ mobile.png);
                     background-position-x: 50%;
@@ -506,10 +485,10 @@
 
                 <!-- Mobile Content -->
                 <div
-                  class="mx-auto d-flex d-md-none align-items-start align-items-sm-center"
+                  class="mx-auto d-flex d-md-none align-items-start align-items-sm-center z-1 position-relative"
                 >
                   <div
-                    class="py-3 px-4 bg-primary col-12 d-flex flex-column justify-content-center"
+                    class="py-5 px-4 bg-primary col-12 d-flex flex-column justify-content-center"
                   >
                     <h1 class="mb-0 fs-4 lh-2 mb-lg-3">
                       PledgeStar Read-A-Thon. <br />
@@ -878,7 +857,6 @@
                           role="tab"
                           aria-controls="pills-home"
                           aria-selected="true"
-                          style="font-family: 'Montserrat', sans-serif"
                         >
                           What is a Read-A-Thon?
                         </button>
@@ -893,7 +871,6 @@
                           role="tab"
                           aria-controls="pills-profile"
                           aria-selected="false"
-                          style="font-family: 'Montserrat', sans-serif"
                         >
                           How a Read-A-Thon works with PledgeStar
                         </button>
@@ -908,7 +885,6 @@
                           role="tab"
                           aria-controls="pills-contact"
                           aria-selected="false"
-                          style="font-family: 'Montserrat', sans-serif"
                         >
                           Read-A-Thon Goals & Rules
                         </button>
@@ -923,7 +899,6 @@
                           role="tab"
                           aria-controls="pills-one"
                           aria-selected="false"
-                          style="font-family: 'Montserrat', sans-serif"
                         >
                           Benefits of Read-A-Thon Fundraisers
                         </button>
@@ -938,7 +913,6 @@
                           role="tab"
                           aria-controls="pills-two"
                           aria-selected="false"
-                          style="font-family: 'Montserrat', sans-serif"
                         >
                           How PledgeStar can help You run a Read-A-Thon
                           Fundraiser
@@ -1373,7 +1347,6 @@
                           >
                             <div
                               class="col-11 text-uppercase text-dark fw-semibold"
-                              style="font-family: 'Montserrat', sans-serif"
                             >
                               Can donors pay per page or per minute?
                             </div>
@@ -1416,7 +1389,6 @@
                           >
                             <div
                               class="col-11 text-uppercase text-dark fw-semibold"
-                              style="font-family: 'Montserrat', sans-serif"
                             >
                               Can students log their reading time or pages
                               themselves?
@@ -1461,7 +1433,6 @@
                           >
                             <div
                               class="col-11 text-uppercase text-dark fw-semibold"
-                              style="font-family: 'Montserrat', sans-serif"
                             >
                               How are donations collected and tracked?
                             </div>
@@ -1546,7 +1517,8 @@
               <section
                 data-section="section_1-type_basicCols"
                 id="raiseMore"
-                class="pt-4 mt-0 pb-3 pb-md-4 bg-light position-relative h-50 d-block d-md-none"
+                class="pt-4 mt-0 pb-3 pb-md-4 bg-light position-relative d-block d-md-none position-relative"
+                style="height: 50vh"
               >
                 <!-- Mobile background -->
                 <div

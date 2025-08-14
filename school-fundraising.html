@@ -1,6 +1,7 @@
 <!-- <assign condition="not IsEmpty(PathAliasRedirect)" name="Controller.Redirect" value="^[PathAliasRedirect]" /> -->
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta
       name="viewport"
@@ -50,7 +51,7 @@
       sizes="16x16"
       href="https://gcdn.pledgestar.com/images/favicon-16x16.png"
     />
-    <link rel="manifest" href="https://gcdn.pledgestar.com/site.webmanifest" />
+
     <link
       rel="mask-icon"
       href="https://gcdn.pledgestar.com/images/safari-pinned-tab.svg"
@@ -146,20 +147,6 @@
     <!-- / The SEO Framework by Sybre Waaijer | 2.83ms meta | 228.43ms boot -->
 
     <link rel="dns-prefetch" href="https://fonts.googleapis.com/" />
-    <link
-      rel="stylesheet"
-      id="css_google-css"
-      href="https://gcdn.pledgestar.com/css_002.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="css_main-css"
-      href="https://gcdn.pledgestar.com/main.css"
-      type="text/css"
-      media="all"
-    />
 
     <style>
       :root {
@@ -198,16 +185,6 @@
       }
     </style>
 
-    <link
-      rel="stylesheet"
-      id="css_custom-css"
-      href="https://gcdn.pledgestar.com/custom.css"
-      type="text/css"
-      media="all"
-    />
-
-    <!-- <link rel="stylesheet" href="./style.css" /> -->
-
     <script
       type="text/javascript"
       src="https://gcdn.pledgestar.com/jquery_003.js"
@@ -244,30 +221,12 @@
       src="https://gcdn.pledgestar.com/g2015/jquery.waypoints.min.js?ver=4.0.1"
       id="js_waypoints-js"
     ></script>
-
-    <style>
-      .radio_item {
-        display: none !important;
-      }
-
-      .radio_item:checked + label {
-        background-color: #0275d8;
-      }
-    </style>
-
-    <style>
-      .edit-options {
-        position: absolute;
-        top: 5;
-        right: 20;
-      }
-    </style>
   </head>
 
   <body>
     <style>
       body {
-        font-family: "Montserrat", monospace !important;
+        font-family: "Roboto", sans-serif;
       }
     </style>
     <div id="header">
@@ -443,10 +402,11 @@
             <div class="">
               <section
                 data-role="hero"
-                class="overflow-hidden bg-light text-white h-50 d-none d-md-block"
+                class="overflow-hidden bg-light text-white d-none d-md-block position-relative"
+                style="height: 50vh"
               >
                 <div
-                  class="position-absolute d-none d-md-block w-100 h-100"
+                  class="position-absolute d-none d-md-block w-100 h-100 z-0"
                   style="
                     background-image: url(./assets/Home.jpg);
                     background-position-x: 60%;
@@ -456,7 +416,7 @@
                 ></div>
 
                 <div
-                  class="mx-auto d-none d-md-flex justify-content-between align-items-start align-items-sm-center h-100 position-relative"
+                  class="mx-auto d-none d-md-flex justify-content-between align-items-start align-items-sm-center h-100 position-relative z-1 position-relative"
                 >
                   <div
                     class="px-3 px-xl-4 py-3 py-md-4 py-lg-5 bg-primary h-100 col-md-5 col-lg-4 col-xxl-3 d-flex flex-column justify-content-center"
@@ -482,10 +442,11 @@
 
               <section
                 data-role="hero"
-                class="overflow-hidden bg-light text-white h-75 d-block d-md-none"
+                class="overflow-hidden bg-light text-white d-block d-md-none position-relative"
+                style="height: 75vh"
               >
                 <div
-                  class="position-absolute d-block d-md-none w-100 h-100"
+                  class="position-absolute d-block d-md-none w-100 h-100 z-0"
                   style="
                     background-image: url(./assets/Mobile-Home.jpg);
                     background-position-x: 50%;
@@ -497,10 +458,10 @@
 
                 <!-- Mobile Content -->
                 <div
-                  class="mx-auto d-flex d-md-none align-items-start align-items-sm-center"
+                  class="mx-auto d-flex d-md-none align-items-start align-items-sm-center z-1 position-relative"
                 >
                   <div
-                    class="py-3 px-4 bg-primary col-12 d-flex flex-column justify-content-center"
+                    class="py-5 px-4 bg-primary col-12 d-flex flex-column justify-content-center"
                   >
                     <h1 class="mb-0 fs-4 lh-2 mb-lg-3">
                       Helping Schools Raise More - <br />
@@ -535,7 +496,7 @@
                   class="d-flex flex-wrap flex-column flex-sm-row justify-content-start justify-content-lg-between w-100 pb-0"
                 >
                   <div class="d-flex flex-column col-sm-12 col-lg-9">
-                    <h2 class="px-5 pt-2 fs-5 text-primary">
+                    <h2 class="px-5 pt-4 fs-5 text-primary">
                       Flexible fundraising for all your events!
                     </h2>
                     <div
@@ -1041,7 +1002,7 @@
                   >
                     <ul class="list-unstyled mt-auto">
                       <li
-                        class="text-dark fw-normal d-flex align-items-center gap-2 lh-4 small"
+                        class="text-dark fw-normal d-flex align-items-center gap-2 lh-4 small mb-3"
                       >
                         <img
                           src="./assets/li-dot-style.png"
@@ -1052,7 +1013,7 @@
                         funds roll in!
                       </li>
                       <li
-                        class="text-dark fw-normal d-flex align-items-center gap-2 lh-4 small"
+                        class="text-dark fw-normal d-flex align-items-center gap-2 lh-4 small mb-3"
                       >
                         <img
                           src="./assets/li-dot-style.png"
@@ -1314,10 +1275,9 @@
 
                         <button
                           type="button"
-                          class="border-none bg-transparent text-secondary text-decoration-underline italic p-0 mt-2"
+                          class="border-0 bg-transparent text-secondary text-decoration-underline italic p-0 mt-2"
                           data-bs-toggle="modal"
                           data-bs-target="#natalie"
-                          style="font-family: 'Montserrat', sans-serif"
                         >
                           Click to watch video
                         </button>
@@ -1393,10 +1353,9 @@
 
                         <button
                           type="button"
-                          class="border-none bg-transparent text-secondary text-decoration-underline italic p-0 mt-2"
+                          class="border-0 bg-transparent text-secondary text-decoration-underline italic p-0 mt-2"
                           data-bs-toggle="modal"
                           data-bs-target="#sharon"
-                          style="font-family: 'Montserrat', sans-serif"
                         >
                           Click to watch video
                         </button>
@@ -1475,10 +1434,9 @@
 
                         <button
                           type="button"
-                          class="border-none bg-transparent text-secondary text-decoration-underline italic p-0 mt-2"
+                          class="border-0 bg-transparent text-secondary text-decoration-underline italic p-0 mt-2"
                           data-bs-toggle="modal"
                           data-bs-target="#becky"
-                          style="font-family: 'Montserrat', sans-serif"
                         >
                           Click to watch video
                         </button>
@@ -1555,10 +1513,9 @@
 
                         <button
                           type="button"
-                          class="border-none bg-transparent text-secondary text-decoration-underline italic p-0 mt-2"
+                          class="border-0 bg-transparent text-secondary text-decoration-underline italic p-0 mt-2"
                           data-bs-toggle="modal"
                           data-bs-target="#kumeyaay"
-                          style="font-family: 'Montserrat', sans-serif"
                         >
                           Click to watch video
                         </button>
@@ -1681,7 +1638,7 @@
                       Get Your Free Copy
                     </a>
 
-                    <p class="text-dark p-0 lh-4 small">
+                    <p class="text-dark p-0 lh-4 small mt-4">
                       It’s absolutely free—no email required!
                     </p>
                   </div>

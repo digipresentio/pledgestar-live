@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta
       name="viewport"
@@ -56,7 +57,7 @@
       sizes="16x16"
       href="https://gcdn.pledgestar.com/images/favicon-16x16.png"
     />
-    <link rel="manifest" href="https://gcdn.pledgestar.com/site.webmanifest" />
+
     <link
       rel="mask-icon"
       href="https://gcdn.pledgestar.com/images/safari-pinned-tab.svg"
@@ -152,20 +153,6 @@
     <!-- / The SEO Framework by Sybre Waaijer | 2.83ms meta | 228.43ms boot -->
 
     <link rel="dns-prefetch" href="https://fonts.googleapis.com/" />
-    <link
-      rel="stylesheet"
-      id="css_google-css"
-      href="https://gcdn.pledgestar.com/css_002.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="css_main-css"
-      href="https://gcdn.pledgestar.com/main.css"
-      type="text/css"
-      media="all"
-    />
 
     <style>
       :root {
@@ -199,16 +186,6 @@
         --bs-btn-disabled-border-color: #4840bb !important;
       }
     </style>
-
-    <link
-      rel="stylesheet"
-      id="css_custom-css"
-      href="https://gcdn.pledgestar.com/custom.css"
-      type="text/css"
-      media="all"
-    />
-
-    <!-- <link rel="stylesheet" href="./style.css" /> -->
 
     <script
       type="text/javascript"
@@ -246,34 +223,12 @@
       src="https://gcdn.pledgestar.com/g2015/jquery.waypoints.min.js?ver=4.0.1"
       id="js_waypoints-js"
     ></script>
-
-    <style>
-      .radio_item {
-        display: none !important;
-      }
-
-      .radio_item:checked + label {
-        background-color: #0275d8;
-      }
-    </style>
-
-    <style>
-      .section-wrapper {
-        position: relative;
-      }
-
-      .edit-options {
-        position: absolute;
-        top: 5;
-        right: 20;
-      }
-    </style>
   </head>
 
   <body>
     <style>
       body {
-        font-family: "Montserrat", monospace !important;
+        font-family: "Roboto", sans-serif;
       }
     </style>
     <div id="header">
@@ -449,10 +404,11 @@
             <div class="">
               <section
                 data-role="hero"
-                class="overflow-hidden bg-light text-white h-50 d-none d-md-block"
+                class="overflow-hidden bg-light text-white d-none d-md-block position-relative"
+                style="height: 50vh"
               >
                 <div
-                  class="position-absolute top-0 start-0 w-100 h-100 d-none d-md-block"
+                  class="position-absolute top-0 start-0 w-100 h-100 d-none d-md-block z-0"
                   style="
                     background-image: url(./assets/walkathon\ hero\ image.png);
                     background-position-x: 60%;
@@ -462,7 +418,7 @@
                 ></div>
 
                 <div
-                  class="mx-auto d-none d-md-flex justify-content-between align-items-start align-items-sm-center h-100"
+                  class="mx-auto d-none d-md-flex justify-content-between align-items-start align-items-sm-center h-100 z-1 position-relative"
                 >
                   <div
                     class="px-3 px-xl-4 py-3 py-md-4 py-lg-5 bg-primary h-100 col-md-5 col-lg-4 col-xxl-3 d-flex flex-column justify-content-center"
@@ -487,10 +443,11 @@
 
               <section
                 data-role="hero"
-                class="overflow-hidden bg-light text-white h-75 d-block d-md-none"
+                class="overflow-hidden bg-light text-white d-block d-md-none position-relative"
+                style="height: 75vh"
               >
                 <div
-                  class="position-absolute d-block d-md-none w-100 h-100"
+                  class="position-absolute d-block d-md-none w-100 h-100 z-0"
                   style="
                     background-image: url(./assets/walkathon\ hero\ image\ mobile.png);
                     background-position-x: 50%;
@@ -502,10 +459,10 @@
 
                 <!-- Mobile Content -->
                 <div
-                  class="mx-auto d-flex d-md-none align-items-start align-items-sm-center"
+                  class="mx-auto d-flex d-md-none align-items-start align-items-sm-center z-1 position-relative"
                 >
                   <div
-                    class="py-3 px-4 bg-primary col-12 d-flex flex-column justify-content-center"
+                    class="py-5 px-4 bg-primary col-12 d-flex flex-column justify-content-center"
                   >
                     <h1 class="mb-0 fs-4 lh-2 mb-lg-3">
                       Walk-A-Thons Made Easy, Profitable, and Actually Fun
@@ -868,7 +825,6 @@
                           role="tab"
                           aria-controls="pills-home"
                           aria-selected="true"
-                          style="font-family: 'Montserrat', sans-serif"
                         >
                           What is a Walk-A-Thon?
                         </button>
@@ -883,7 +839,6 @@
                           role="tab"
                           aria-controls="pills-profile"
                           aria-selected="false"
-                          style="font-family: 'Montserrat', sans-serif"
                         >
                           How a Walk-A-Thon works
                         </button>
@@ -898,7 +853,6 @@
                           role="tab"
                           aria-controls="pills-contact"
                           aria-selected="false"
-                          style="font-family: 'Montserrat', sans-serif"
                         >
                           Benefits of hosting a Walk-A-Thon Fundraiser
                         </button>
@@ -913,7 +867,6 @@
                           role="tab"
                           aria-controls="pills-one"
                           aria-selected="false"
-                          style="font-family: 'Montserrat', sans-serif"
                         >
                           Walk-A-Thon Timeline
                         </button>
@@ -928,7 +881,6 @@
                           role="tab"
                           aria-controls="pills-two"
                           aria-selected="false"
-                          style="font-family: 'Montserrat', sans-serif"
                         >
                           Enhance the Walk-A-Thon experience with a theme
                         </button>
@@ -943,7 +895,6 @@
                           role="tab"
                           aria-controls="pills-three"
                           aria-selected="false"
-                          style="font-family: 'Montserrat', sans-serif"
                         >
                           Fundraising Alternatives to Walk-A-Thons
                         </button>
@@ -958,7 +909,6 @@
                           role="tab"
                           aria-controls="pills-four"
                           aria-selected="false"
-                          style="font-family: 'Montserrat', sans-serif"
                         >
                           Why Use Pledgestar For Your Walk-A-Thon?
                         </button>
@@ -1412,7 +1362,6 @@
                           >
                             <div
                               class="col-11 text-uppercase text-dark fw-semibold"
-                              style="font-family: 'Montserrat', sans-serif"
                             >
                               How much does it cost to use PledgeStar for a
                               walk-a-thon?
@@ -1460,7 +1409,6 @@
                           >
                             <div
                               class="col-11 text-uppercase text-dark fw-semibold"
-                              style="font-family: 'Montserrat', sans-serif"
                             >
                               How long does it take to get started?
                             </div>
@@ -1507,7 +1455,6 @@
                           >
                             <div
                               class="col-11 text-uppercase text-dark fw-semibold"
-                              style="font-family: 'Montserrat', sans-serif"
                             >
                               Do parents or donors need to download an app?
                             </div>
@@ -1592,11 +1539,12 @@
               <section
                 data-section="section_1-type_basicCols"
                 id="raiseMore"
-                class="pt-4 mt-0 pb-3 pb-md-4 bg-light position-relative h-50 d-block d-md-none"
+                class="pt-4 mt-0 pb-3 pb-md-4 bg-light position-relative d-block d-md-none position-relative"
+                style="height: 50vh"
               >
                 <!-- Mobile background -->
                 <div
-                  class="position-absolute top-0 start-0 w-100 h-100 d-block d-md-none"
+                  class="position-absolute top-0 start-0 w-100 h-100 d-block d-md-none z-0"
                   style="
                     background-image: url('./assets/2\ mob.png');
                     background-position-x: 50%;
